@@ -1,1 +1,10 @@
-
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/**/*.lua", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/script.lua", "dest": "/api/script.lua" },
+    { "handle": "filesystem" }
+  ]
+}
