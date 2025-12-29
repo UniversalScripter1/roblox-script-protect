@@ -1,7 +1,6 @@
 export const config = {
-  matcher: ["/api/script.lua"],
+  matcher: '/api/script',     // without .lua now, or '/protected/script.lua' if static
 };
-
 export default function middleware(request) {
   const userAgent = request.headers.get("user-agent") || "unknown";
 
